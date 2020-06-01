@@ -1,2 +1,12 @@
 server:
   port: 9999
+
+spring:
+#  application:
+#    name: gs-route-java-demo-httpbin
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:9000
+

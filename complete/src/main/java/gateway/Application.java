@@ -1,5 +1,6 @@
 package gateway;
 
+import org.springframework.context.annotation.Profile;
 import reactor.core.publisher.Mono;
 
 import org.springframework.boot.SpringApplication;
@@ -24,6 +25,7 @@ public class Application {
 
 	// tag::route-locator[]
 	@Bean
+//    @Profile("deadbeef")
 	public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
 		String httpUri = uriConfiguration.getHttpbin();
 		return builder.routes()
