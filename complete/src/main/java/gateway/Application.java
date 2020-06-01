@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 // tag::code[]
 @SpringBootApplication
-@EnableConfigurationProperties(UriConfiguration.class)
+//@EnableConfigurationProperties(UriConfiguration.class)
 @RestController
 public class Application {
 
@@ -25,7 +25,7 @@ public class Application {
 
 	// tag::route-locator[]
 	@Bean
-//    @Profile("deadbeef")
+    @Profile("deadbeef")
 	public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
 		String httpUri = uriConfiguration.getHttpbin();
 		return builder.routes()
