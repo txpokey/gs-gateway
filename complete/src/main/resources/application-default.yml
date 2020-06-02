@@ -4,28 +4,21 @@ server:
 spring:
   profiles:
     active: default
-  cloud:
-#    config:
-#      uri: http://localhost:9000
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-#      routes:
-#        - id: test-route-yml
-#          uri: http://httpbin.org:80
-#          predicates:
-#          - Path=/get/**
-gs-route-java-demo-httpbin:
-  ribbon:
-    eureka:
-      enabled: false
-    eager-load:
-      enabled: false
-    ServerListRefreshInterval: 15000
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-    register-with-eureka: false
-    fetch-registry: false
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#gs-route-java-demo-httpbin:
+#  ribbon:
+#    eureka:
+#      enabled: false
+#    eager-load:
+#      enabled: false
+#    ServerListRefreshInterval: 15000
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
+#    register-with-eureka: false
+#    fetch-registry: false
