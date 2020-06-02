@@ -1,3 +1,6 @@
 spring:
   application:
     name: gs-route-java-demo-httpbin
+  cloud:
+    config:
+      uri: http://localhost:9000
