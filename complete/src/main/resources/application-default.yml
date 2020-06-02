@@ -19,13 +19,13 @@ spring:
 gs-route-java-demo-httpbin:
   ribbon:
     eureka:
-      enabled: true
+      enabled: false
     eager-load:
-      enabled: true
+      enabled: false
     ServerListRefreshInterval: 15000
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
