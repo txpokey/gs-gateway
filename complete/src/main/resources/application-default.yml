@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 19999
 
 spring:
   profiles:
@@ -22,3 +22,5 @@ spring:
 #      defaultZone: http://localhost:8761/eureka
 #    register-with-eureka: false
 #    fetch-registry: false
+management.endpoint.gateway.enabled: true # default value
+management.endpoints.web.exposure.include: gateway
